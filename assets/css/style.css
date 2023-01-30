@@ -1,20 +1,11 @@
-/**
-* Template Name: iPortfolio - v3.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: rgba(255,255,255,.5);
 }
 
 a {
-  color: #149ddd;
+  color: #20c997;
   text-decoration: none;
 }
 
@@ -31,7 +22,12 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+.bg-dark-1 {
+  background-color: #1e2125;
+}
+.bg-dark-2 {
+  background-color: #212529;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -42,7 +38,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: rgba(0, 0, 0, 0.2);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +52,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #20c997;
   color: #fff;
 }
 
@@ -78,7 +74,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #111;
   overflow-y: auto;
 }
 
@@ -108,7 +104,7 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #212529;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -121,9 +117,21 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  /* background: #20c997; */
   color: #fff;
   text-decoration: none;
+}
+#header .profile .social-links a.facebook:hover{
+  background: #3b5998;
+}
+#header .profile .social-links a.instagram:hover{
+  background: #cd486b;
+}
+#header .profile .social-links a.whatsapp:hover{
+  background: #25D366;
+}
+#header .profile .social-links a.linkedin:hover{
+  background: #0A66C2;
 }
 
 #main {
@@ -189,7 +197,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #20c997;
 }
 
 /* Mobile Navigation */
@@ -202,7 +210,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #20c997;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -228,13 +236,14 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") center;
+  background: url("../img/hero-bg.jpeg") center;
+  /* background: -webkit-image-set(url("../img/hero-bg.webp") 1x); */
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -268,7 +277,7 @@ h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #20c997;
 }
 
 @media (min-width: 1024px) {
@@ -298,10 +307,6 @@ section {
   overflow: hidden;
 }
 
-.section-bg {
-  background: #f5f8fd;
-}
-
 .section-title {
   padding-bottom: 30px;
 }
@@ -312,7 +317,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #ffffff;
 }
 
 .section-title h2::after {
@@ -321,7 +326,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #20c997;
   bottom: 0;
   left: 0;
 }
@@ -334,13 +339,13 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .profile-img {
-  box-shadow: 5px 5px 30px #65646e;
+  box-shadow: 1px 1px 20px #000;
 }
 
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #ffffff;
 }
 
 .about .content ul {
@@ -355,17 +360,18 @@ section {
 }
 
 .about .content ul li span a {
-  color: #272829;
+  color: #20c997 !important;
 }
 
 .about .content ul strong {
   margin-right: 10px;
+  color: #fff;
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #20c997;
   line-height: 0;
 }
 
@@ -390,7 +396,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #dee3e4;
 }
 
 .skills .progress .skill .val {
@@ -399,7 +405,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: #111418;
   height: 10px;
 }
 
@@ -407,7 +413,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: #20c997;
 }
 
 /*--------------------------------------------------------------
@@ -418,13 +424,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #050d18;
+  color: #fff;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid rgba(255,255,255,.5);
   position: relative;
 }
 
@@ -434,17 +440,22 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #dc3545;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #fff;
+  border-radius: 6px;
+}
+.resume .resume-item p em{
+  color: #20c997;
 }
 
 .resume .resume-item ul {
@@ -472,7 +483,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #36cea1;
 }
 
 /*--------------------------------------------------------------
@@ -507,7 +518,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #20c997;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -597,11 +608,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #20c997;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #20c997;
 }
 
 .portfolio-details .portfolio-info {
@@ -655,10 +666,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #20c997;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #20c997;
 }
 
 .services .icon i {
@@ -672,7 +683,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #20c997;
 }
 
 .services .title {
@@ -683,11 +694,11 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: #fff;
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #20c997;
 }
 
 .services.projects .title {
@@ -707,7 +718,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #149ddd;
+  color: #20c997;
   margin-top: 3px;
   transition: 0.5s;
 }
@@ -798,11 +809,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #20c997;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #20c997;
 }
 
 /*--------------------------------------------------------------
@@ -821,7 +832,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #20c997;
   float: left;
   width: 44px;
   height: 44px;
@@ -845,7 +856,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #ffffff;
 }
 
 .contact .info .email p {
@@ -872,14 +883,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #20c997;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #20c997;
   color: #fff;
 }
 
@@ -968,7 +979,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background: #20c997;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1059,7 +1070,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: #111;
 }
 
 #footer .copyright {
