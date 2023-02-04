@@ -92,7 +92,12 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle" width="120px">
+        <!-- <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle" width="120px"> -->
+        <picture>
+          <source srcset="assets/img/profile-img.webp" type="image/webp">
+          <source srcset="assets/img/profile-img.png" type="image/png">
+          <img src="assets/img/profile-img.png" class="img-fluid rounded-circle" alt="" width="120px">
+        </picture>
         <h1 class="text-light">Archan Patadiya</h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/people/Archan-Soni/100065863255061/" class="facebook" target="blank"
