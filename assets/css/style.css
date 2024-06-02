@@ -279,11 +279,22 @@ h6 {
   letter-spacing: 1px;
   border-bottom: 3px solid #20c997;
 }
+@media (min-width: 992px) {
+  .skills .skills-content > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+  }
+  
+  .skills .progress {
+    width: calc(50% - 12px);
+  }
+}
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-  }
+  } 
 }
 
 @media (max-width: 768px) {
@@ -380,7 +391,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
